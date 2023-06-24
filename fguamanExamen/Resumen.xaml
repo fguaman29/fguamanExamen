@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fguamanExamen.Resumen">
+    <ContentPage.Resources>
+        
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="blue"/>
+                <Setter Property="Background" Value="Beige"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN" HorizontalTextAlignment="Center" FontSize="24" TextColor="blue"/>
+            <Label  x:Name="lblUsuario" TextColor="Red" FontSize="16" HorizontalTextAlignment="End" />
+            <Entry x:Name="txtDato" IsReadOnly="True"/>
+            <Entry x:Name="txtEstudiante" IsReadOnly="True"/>
+            <Button x:Name="btnSalir" Text="SALIR" Clicked="btnSalir_Clicked"  Style="{StaticResource ButtonStyle}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
